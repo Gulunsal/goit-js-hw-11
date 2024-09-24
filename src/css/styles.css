@@ -23,6 +23,12 @@
   |============================
 */
 
+/* Back Link Container */
+.back-link-container {
+  margin-left: 40px; /* Soldan 40px boşluk */
+  text-align: left; /* Butonu sola hizala */
+}
+
 /* Form Container */
 .form-container {
   display: flex;
