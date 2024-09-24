@@ -5,21 +5,46 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanilla App Template</title>
+  <title>GOIT HOMEWORK 11</title>
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
+  <!-- Header Load -->
   <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-  <a class="back-link" href="./index.html">Go back</a>
 
+  <!-- Back Link -->
+  <div class="back-link-container">
+    <a class="back-link" href="./index.html">Go back</a>
+  </div>
+
+  <!-- Search Form -->
+  <div class="form-container">
+    <form id="search-form">
+      <input type="text" id="query" placeholder="Görsel aramak için yazın..." required />
+      <button type="submit">Ara</button>
+    </form>
+  </div>
+
+  <!-- CSS Loader -->
+  <div id="loader" class="loader" style="display: none;"></div> <!-- Yükleme göstergesi başlangıçta gizli -->
+
+  <!-- Gallery Section -->
+  <div id="gallery"></div>
+
+  <!-- Main Content (Badges) -->
   <main>
-    <!-- Loads the specified .html file -->
-    <load src="./partials/vite-promo.html" />
     <load src="./partials/badges.html" />
   </main>
 
+  <!-- Footer Load -->
   <load src="./partials/footer.html" />
+
+  <!-- Modal Yapısı -->
+  <div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
 
   <script type="module" src="./main.js"></script>
 </body>
