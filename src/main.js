@@ -4,7 +4,7 @@ import SimpleLightbox from "simplelightbox"
 import "simplelightbox/dist/simple-lightbox.min.css"
 
 // Pixabay API detayları
-const API_KEY = '46156340-afe2d6dd24e461f249d973066' // API anahtarınız
+const API_KEY = '46156340-afe2d6dd24e461f249d973066' // API anahtarım 
 const BASE_URL = 'https://pixabay.com/api/'
 
 // Modal ve Loader öğelerini güvenli bir şekilde al
